@@ -10,6 +10,9 @@ public class Main {
         Consumer consumerPepe = new Consumer("Pepe",store);
         Consumer consumerJuan = new Consumer("Juan",store);
 
+        producerManolo.setPriority(Thread.MAX_PRIORITY);
+        producerPaco.setPriority(Thread.MAX_PRIORITY);
+
         producerManolo.start();
         producerPaco.start();
         consumerPepe.start();
