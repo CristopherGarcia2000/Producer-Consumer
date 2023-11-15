@@ -7,7 +7,7 @@ public class Producer extends Thread{
             "carrot", "green bean"};
     private String producerName;
     private String vegetableName;
-    private int  maxPlantedVegetables = 10;
+    private int  maxPlantedVegetables = 5;
     private int plantedVegetables = 0;
     private Store store;
 

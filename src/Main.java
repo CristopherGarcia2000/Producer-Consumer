@@ -6,16 +6,9 @@ public class Main {
     public static void main(String[] args) {
         Store store = new Store();
         Producer producerManolo = new Producer("Manolo",store);
-        Producer producerPaco = new Producer("Paco",store);
-        Consumer consumerPepe = new Consumer("Pepe",store);
         Consumer consumerJuan = new Consumer("Juan",store);
 
-        producerManolo.setPriority(Thread.MAX_PRIORITY);
-        producerPaco.setPriority(Thread.MAX_PRIORITY);
-
         producerManolo.start();
-        producerPaco.start();
-        consumerPepe.start();
         consumerJuan.start();
     }
 }
