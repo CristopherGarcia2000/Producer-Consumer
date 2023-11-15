@@ -16,7 +16,7 @@ public class Consumer extends Thread{
     @Override
     public synchronized void run() {
         while (consumedVegetables < eatenVegetablesLimit){
-            int consumingTime = (int)(Math.random() * 1000);
+            int consumingTime = 5000;
             try{
                 if(store.getVegetablesList() > 0){
                     sleep(consumingTime);

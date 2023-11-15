@@ -20,7 +20,7 @@ public class Producer extends Thread{
     @Override
     public synchronized void run() {
         while (plantedVegetables < maxPlantedVegetables){
-            int growthTime = (int)(Math.random() * 1000);
+            int growthTime = 2000;
             try {
                 sleep(growthTime);
                 store.addVegetables(vegetableName);
