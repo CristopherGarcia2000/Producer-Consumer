@@ -23,6 +23,7 @@ public class Consumer extends Thread{
                     store.decreaseVegetables((int)(Math.random()*store.getVegetablesList()));
                     consumedVegetables++;
                     System.out.println(consumerName+" ha comido una verdura");
+                    System.out.println("Almacén: "+store.showVegetablesList());
                     notifyAll();
                 }
             } catch (InterruptedException e){
